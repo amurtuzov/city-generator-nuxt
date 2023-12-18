@@ -18,4 +18,4 @@ $ yarn start
 $ yarn generate
 ```
 
-## To configure SEO go to app.vue in root and fill objects parameter of useHead and useJsonld functions.
+## To configure SEO go to app.vue in root and fill object parameter of useHead and useJsonld functions.
