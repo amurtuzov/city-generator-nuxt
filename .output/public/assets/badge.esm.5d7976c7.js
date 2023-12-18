@@ -1,4 +1,4 @@
-import{P as s,T as t,p as i,q as o,S as p,_ as d,x as l,O as g}from"./entry.2465bfd8.js";import{s as u}from"./basecomponent.esm.e3aa8986.js";var c=`
+import{P as s,T as t,p as i,q as o,S as p,_ as d,x as l,O as g}from"./entry.268357bb.js";import{s as u}from"./basecomponent.esm.be8e9405.js";var c=`
 @layer primevue {
     .p-badge {
         display: inline-block;
