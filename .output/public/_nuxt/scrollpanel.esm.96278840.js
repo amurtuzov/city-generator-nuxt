@@ -1,4 +1,4 @@
-import{P as p,U as c,Q as s,p as h,q as f,v as u,O as a,S as m}from"./entry.6f5277b7.js";import{s as b}from"./basecomponent.esm.c1f0309d.js";var v=`
+import{P as p,U as c,Q as s,p as h,q as f,v as u,O as a,S as m}from"./entry.2465bfd8.js";import{s as b}from"./basecomponent.esm.e3aa8986.js";var v=`
 @layer primevue {
     .p-scrollpanel-wrapper {
         overflow: hidden;
