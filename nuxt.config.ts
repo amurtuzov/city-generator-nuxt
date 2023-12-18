@@ -1,5 +1,9 @@
 export default defineNuxtConfig({
+  experimental: {
+    inlineSSRStyles: false,
+  },
   nitro: {
+    preset: 'github-pages',
     esbuild: {
       options: {
         target: 'esnext',
@@ -10,6 +14,7 @@ export default defineNuxtConfig({
     autoImport: true,
   },
   app: {
+    baseURL: '/city-generator-nuxt/',
     head: {
       meta: [
         { charset: 'utf-8' },
@@ -18,7 +23,7 @@ export default defineNuxtConfig({
         { 'http-equiv': 'content-type', 'content': 'text/html; charset=UTF-8' },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: '/city-generator-nuxt/favicon.ico' },
       ],
     },
   },
