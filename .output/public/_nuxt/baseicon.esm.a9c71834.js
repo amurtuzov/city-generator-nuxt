@@ -1,4 +1,4 @@
-import{s as t}from"./basecomponent.esm.f8bb7c94.js";import{I as o,O as a}from"./entry.721ba924.js";var s=`
+import{s as t}from"./basecomponent.esm.92b8c4fe.js";import{P as o,T as a}from"./entry.96a6803d.js";var s=`
 .p-icon {
     display: inline-block;
 }

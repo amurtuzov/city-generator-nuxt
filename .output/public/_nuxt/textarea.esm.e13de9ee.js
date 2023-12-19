@@ -1,4 +1,4 @@
-import{s as i}from"./basecomponent.esm.f8bb7c94.js";import{I as r,k as l,l as o,H as u}from"./entry.721ba924.js";var p=`
+import{s as i}from"./basecomponent.esm.92b8c4fe.js";import{P as r,p as l,q as o,O as u}from"./entry.96a6803d.js";var p=`
 @layer primevue {
     .p-inputtextarea-resizable {
         overflow: hidden;
