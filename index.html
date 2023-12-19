@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html >
+<head><style type="text/css" data-primevue-style-id="layer-order" >@layer tailwind-base, primevue, tailwind-utilities</style><meta charset="utf-8">
+<meta id="1" name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog post titles</title>
+<meta http-equiv="content-language" content="en">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="icon" type="image/x-icon" href="/city-generator-nuxt/favicon.ico">
+<link rel="preload" as="fetch" crossorigin="anonymous" href="/city-generator-nuxt/_payload.json">
+<link rel="stylesheet" href="/city-generator-nuxt/_nuxt/entry.b337cc9c.css">
+<link rel="stylesheet" href="/city-generator-nuxt/_nuxt/default.38c5a7e7.css">
+<link rel="stylesheet" href="/city-generator-nuxt/_nuxt/index.5970db11.css">
+<link rel="modulepreload" as="script" crossorigin href="/city-generator-nuxt/_nuxt/entry.c52c1673.js">
+<link rel="modulepreload" as="script" crossorigin href="/city-generator-nuxt/_nuxt/default.2bba3c55.js">
+<link rel="modulepreload" as="script" crossorigin href="/city-generator-nuxt/_nuxt/_plugin-vue_export-helper.c27b6911.js">
+<link rel="modulepreload" as="script" crossorigin href="/city-generator-nuxt/_nuxt/index.e648a165.js">
+<link rel="prefetch" as="image" type="image/svg+xml" href="/city-generator-nuxt/_nuxt/primeicons.5e10f102.svg">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/dropdown.esm.389dc295.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/baseicon.esm.3fac2dd4.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/basecomponent.esm.0b7dc133.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/index.esm.e39170b2.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/portal.esm.2305304f.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/overlayeventbus.esm.1c6bc6c3.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/inputtext.esm.335955d4.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/textarea.esm.b388a3ca.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/button.esm.514772b5.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/badge.esm.efe05aaa.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/scrollpanel.esm.ebe54680.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/confirmdialog.esm.2e9bfb7c.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/dialog.esm.e54ca5ef.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/overlaypanel.esm.e5d9475f.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/404.335107a8.js">
+<link rel="prefetch" as="image" type="image/svg+xml" href="/city-generator-nuxt/_nuxt/top-mobile.cd8c9b83.svg">
+<link rel="prefetch" as="image" type="image/svg+xml" href="/city-generator-nuxt/_nuxt/bottom-mobile.d186cb41.svg">
+<link rel="prefetch" as="image" type="image/svg+xml" href="/city-generator-nuxt/_nuxt/top.712266b7.svg">
+<link rel="prefetch" as="image" type="image/svg+xml" href="/city-generator-nuxt/_nuxt/bottom.72fa64b0.svg">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/FavoritesToggler.471cfe66.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/favorites.7b17b7c0.js">
+<link rel="prefetch" as="script" crossorigin href="/city-generator-nuxt/_nuxt/ListItem.8b262d04.js">
+<script type="module" src="/city-generator-nuxt/_nuxt/entry.c52c1673.js" crossorigin></script><style type="text/css" data-primevue-style-id="base" >
+.p-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.p-hidden-accessible input,
+.p-hidden-accessible select {
+    transform: scale(0);
+}
+
+.p-overflow-hidden {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+</style><style type="text/css" data-primevue-style-id="common" >
+@layer primevue {
+.p-component, .p-component * {
+    box-sizing: border-box;
+}
+
+.p-hidden-space {
+    visibility: hidden;
+}
+
+.p-reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    font-size: 100%;
+    list-style: none;
+}
+
+.p-disabled, .p-disabled * {
+    cursor: default !important;
+    pointer-events: none;
+    user-select: none;
+}
+
+.p-component-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.p-unselectable-text {
+    user-select: none;
+}
+
+.p-sr-only {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.p-link {
+	text-align: left;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	border: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.p-link:disabled {
+	cursor: default;
+}
+
+/* Non vue overlay animations */
+.p-connected-overlay {
+    opacity: 0;
+    transform: scaleY(0.8);
+    transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.p-connected-overlay-visible {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.p-connected-overlay-hidden {
+    opacity: 0;
+    transform: scaleY(1);
+    transition: opacity .1s linear;
+}
+
+/* Vue based overlay animations */
+.p-connected-overlay-enter-from {
+    opacity: 0;
+    transform: scaleY(0.8);
+}
+
+.p-connected-overlay-leave-to {
+    opacity: 0;
+}
+
+.p-connected-overlay-enter-active {
+    transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.p-connected-overlay-leave-active {
+    transition: opacity .1s linear;
+}
+
+/* Toggleable Content */
+.p-toggleable-content-enter-from,
+.p-toggleable-content-leave-to {
+    max-height: 0;
+}
+
+.p-toggleable-content-enter-to,
+.p-toggleable-content-leave-from {
+    max-height: 1000px;
+}
+
+.p-toggleable-content-leave-active {
+    overflow: hidden;
+    transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+}
+
+.p-toggleable-content-enter-active {
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+
+.p-button {
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-button-label {
+    flex: 1 1 auto;
+}
+
+.p-button-icon-right {
+    order: 1;
+}
+
+.p-button:disabled {
+    cursor: default;
+}
+
+.p-button-icon-only {
+    justify-content: center;
+}
+
+.p-button-icon-only .p-button-label {
+    visibility: hidden;
+    width: 0;
+    flex: 0 0 auto;
+}
+
+.p-button-vertical {
+    flex-direction: column;
+}
+
+.p-button-icon-bottom {
+    order: 2;
+}
+
+.p-buttonset .p-button {
+    margin: 0;
+}
+
+.p-buttonset .p-button:not(:last-child), .p-buttonset .p-button:not(:last-child):hover {
+    border-right: 0 none;
+}
+
+.p-buttonset .p-button:not(:first-of-type):not(:last-of-type) {
+    border-radius: 0;
+}
+
+.p-buttonset .p-button:first-of-type:not(:only-of-type) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.p-buttonset .p-button:last-of-type:not(:only-of-type) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.p-buttonset .p-button:focus {
+    position: relative;
+    z-index: 1;
+}
+
+
+.p-checkbox {
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: bottom;
+    position: relative;
+}
+
+.p-checkbox.p-checkbox-disabled {
+    cursor: default;
+}
+
+.p-checkbox-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.p-fluid .p-inputtext {
+    width: 100%;
+}
+
+/* InputGroup */
+.p-inputgroup {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-inputgroup .p-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.p-inputgroup .p-inputtext,
+.p-fluid .p-inputgroup .p-inputtext,
+.p-inputgroup .p-inputwrapper,
+.p-fluid .p-inputgroup .p-input {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+/* Floating Label */
+.p-float-label {
+    display: block;
+    position: relative;
+}
+
+.p-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    line-height: 1;
+}
+
+.p-float-label textarea ~ label {
+    top: 1rem;
+}
+
+.p-float-label input:focus ~ label,
+.p-float-label input.p-filled ~ label,
+.p-float-label input:-webkit-autofill ~ label,
+.p-float-label textarea:focus ~ label,
+.p-float-label textarea.p-filled ~ label,
+.p-float-label .p-inputwrapper-focus ~ label,
+.p-float-label .p-inputwrapper-filled ~ label {
+    top: -.75rem;
+    font-size: 12px;
+}
+
+
+.p-float-label .p-placeholder,
+.p-float-label input::placeholder,
+.p-float-label .p-inputtext::placeholder {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-float-label .p-focus .p-placeholder,
+.p-float-label input:focus::placeholder,
+.p-float-label .p-inputtext:focus::placeholder {
+    opacity: 1;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.p-input-icon-left > i,
+.p-input-icon-left > svg,
+.p-input-icon-right > i,
+.p-input-icon-right > svg {
+    position: absolute;
+    top: 50%;
+    margin-top: -.5rem;
+}
+
+.p-fluid .p-input-icon-left,
+.p-fluid .p-input-icon-right {
+    display: block;
+    width: 100%;
+}
+
+
+.p-radiobutton {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: bottom;
+}
+
+.p-radiobutton.p-radiobutton-disabled {
+    cursor: default;
+}
+
+.p-radiobutton-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-radiobutton-icon {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(.1);
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.p-radiobutton-box.p-highlight .p-radiobutton-icon {
+    transform: translateZ(0) scale(1.0, 1.0);
+    visibility: visible;
+}
+
+}
+</style><style type="text/css" data-primevue-style-id="dropdown" >
+@layer primevue {
+    .p-dropdown {
+        display: inline-flex;
+        cursor: pointer;
+        position: relative;
+        user-select: none;
+    }
+
+    .p-dropdown-clear-icon {
+        position: absolute;
+        top: 50%;
+        margin-top: -0.5rem;
+    }
+
+    .p-dropdown-trigger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .p-dropdown-label {
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        flex: 1 1 auto;
+        width: 1%;
+        text-overflow: ellipsis;
+        cursor: pointer;
+    }
+
+    .p-dropdown-label-empty {
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    input.p-dropdown-label {
+        cursor: default;
+    }
+
+    .p-dropdown .p-dropdown-panel {
+        min-width: 100%;
+    }
+
+    .p-dropdown-panel {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .p-dropdown-items-wrapper {
+        overflow: auto;
+    }
+
+    .p-dropdown-item {
+        cursor: pointer;
+        font-weight: normal;
+        white-space: nowrap;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .p-dropdown-item-group {
+        cursor: auto;
+    }
+
+    .p-dropdown-items {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .p-dropdown-filter {
+        width: 100%;
+    }
+
+    .p-dropdown-filter-container {
+        position: relative;
+    }
+
+    .p-dropdown-filter-icon {
+        position: absolute;
+        top: 50%;
+        margin-top: -0.5rem;
+    }
+
+    .p-fluid .p-dropdown {
+        display: flex;
+    }
+
+    .p-fluid .p-dropdown .p-dropdown-label {
+        width: 1%;
+    }
+}
+</style><style type="text/css" data-primevue-style-id="textarea" >
+@layer primevue {
+    .p-inputtextarea-resizable {
+        overflow: hidden;
+        resize: none;
+    }
+
+    .p-fluid .p-inputtextarea {
+        width: 100%;
+    }
+}
+</style><style type="text/css" data-primevue-style-id="scrollpanel" >
+@layer primevue {
+    .p-scrollpanel-wrapper {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        float: left;
+    }
+
+    .p-scrollpanel-content {
+        height: calc(100% + 18px);
+        width: calc(100% + 18px);
+        padding: 0 18px 18px 0;
+        position: relative;
+        overflow: auto;
+        box-sizing: border-box;
+        scrollbar-width: none;
+    }
+
+    .p-scrollpanel-content::-webkit-scrollbar {
+        display: none;
+    }
+
+    .p-scrollpanel-bar {
+        position: relative;
+        background: #c1c1c1;
+        border-radius: 3px;
+        z-index: 2;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.25s linear;
+    }
+
+    .p-scrollpanel-bar-y {
+        width: 9px;
+        top: 0;
+    }
+
+    .p-scrollpanel-bar-x {
+        height: 9px;
+        bottom: 0;
+    }
+
+    .p-scrollpanel-hidden {
+        visibility: hidden;
+    }
+
+    .p-scrollpanel:hover .p-scrollpanel-bar,
+    .p-scrollpanel:active .p-scrollpanel-bar {
+        opacity: 1;
+    }
+
+    .p-scrollpanel-grabbed {
+        user-select: none;
+    }
+}
+</style><style type="text/css" data-primevue-style-id="dialog" >
+@layer primevue {
+    .p-dialog-mask.p-component-overlay {
+        pointer-events: auto;
+    }
+
+    .p-dialog {
+        max-height: 90%;
+        transform: scale(1);
+    }
+
+    .p-dialog-content {
+        overflow-y: auto;
+    }
+
+    .p-dialog-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+    }
+
+    .p-dialog-footer {
+        flex-shrink: 0;
+    }
+
+    .p-dialog .p-dialog-header-icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .p-dialog .p-dialog-header-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Fluid */
+    .p-fluid .p-dialog-footer .p-button {
+        width: auto;
+    }
+
+    /* Animation */
+    /* Center */
+    .p-dialog-enter-active {
+        transition: all 150ms cubic-bezier(0, 0, 0.2, 1);
+    }
+    .p-dialog-leave-active {
+        transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .p-dialog-enter-from,
+    .p-dialog-leave-to {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    /* Top, Bottom, Left, Right, Top* and Bottom* */
+    .p-dialog-top .p-dialog,
+    .p-dialog-bottom .p-dialog,
+    .p-dialog-left .p-dialog,
+    .p-dialog-right .p-dialog,
+    .p-dialog-topleft .p-dialog,
+    .p-dialog-topright .p-dialog,
+    .p-dialog-bottomleft .p-dialog,
+    .p-dialog-bottomright .p-dialog {
+        margin: 0.75rem;
+        transform: translate3d(0px, 0px, 0px);
+    }
+    .p-dialog-top .p-dialog-enter-active,
+    .p-dialog-top .p-dialog-leave-active,
+    .p-dialog-bottom .p-dialog-enter-active,
+    .p-dialog-bottom .p-dialog-leave-active,
+    .p-dialog-left .p-dialog-enter-active,
+    .p-dialog-left .p-dialog-leave-active,
+    .p-dialog-right .p-dialog-enter-active,
+    .p-dialog-right .p-dialog-leave-active,
+    .p-dialog-topleft .p-dialog-enter-active,
+    .p-dialog-topleft .p-dialog-leave-active,
+    .p-dialog-topright .p-dialog-enter-active,
+    .p-dialog-topright .p-dialog-leave-active,
+    .p-dialog-bottomleft .p-dialog-enter-active,
+    .p-dialog-bottomleft .p-dialog-leave-active,
+    .p-dialog-bottomright .p-dialog-enter-active,
+    .p-dialog-bottomright .p-dialog-leave-active {
+        transition: all 0.3s ease-out;
+    }
+    .p-dialog-top .p-dialog-enter-from,
+    .p-dialog-top .p-dialog-leave-to {
+        transform: translate3d(0px, -100%, 0px);
+    }
+    .p-dialog-bottom .p-dialog-enter-from,
+    .p-dialog-bottom .p-dialog-leave-to {
+        transform: translate3d(0px, 100%, 0px);
+    }
+    .p-dialog-left .p-dialog-enter-from,
+    .p-dialog-left .p-dialog-leave-to,
+    .p-dialog-topleft .p-dialog-enter-from,
+    .p-dialog-topleft .p-dialog-leave-to,
+    .p-dialog-bottomleft .p-dialog-enter-from,
+    .p-dialog-bottomleft .p-dialog-leave-to {
+        transform: translate3d(-100%, 0px, 0px);
+    }
+    .p-dialog-right .p-dialog-enter-from,
+    .p-dialog-right .p-dialog-leave-to,
+    .p-dialog-topright .p-dialog-enter-from,
+    .p-dialog-topright .p-dialog-leave-to,
+    .p-dialog-bottomright .p-dialog-enter-from,
+    .p-dialog-bottomright .p-dialog-leave-to {
+        transform: translate3d(100%, 0px, 0px);
+    }
+
+    /* Maximize */
+    .p-dialog-maximized {
+        -webkit-transition: none;
+        transition: none;
+        transform: none;
+        width: 100vw !important;
+        height: 100vh !important;
+        top: 0px !important;
+        left: 0px !important;
+        max-height: 100%;
+        height: 100%;
+    }
+    .p-dialog-maximized .p-dialog-content {
+        flex-grow: 1;
+    }
+
+    .p-confirm-dialog .p-dialog-content {
+        display: flex;
+        align-items: center;
+    }
+}
+</style><style type="text/css" data-primevue-style-id="overlaypanel" >
+@layer primevue {
+    .p-overlaypanel {
+        margin-top: 10px;
+    }
+
+    .p-overlaypanel-flipped {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .p-overlaypanel-close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    /* Animation */
+    .p-overlaypanel-enter-from {
+        opacity: 0;
+        transform: scaleY(0.8);
+    }
+
+    .p-overlaypanel-leave-to {
+        opacity: 0;
+    }
+
+    .p-overlaypanel-enter-active {
+        transition: transform 0.12s cubic-bezier(0, 0, 0.2, 1), opacity 0.12s cubic-bezier(0, 0, 0.2, 1);
+    }
+
+    .p-overlaypanel-leave-active {
+        transition: opacity 0.1s linear;
+    }
+
+    .p-overlaypanel:after,
+    .p-overlaypanel:before {
+        bottom: 100%;
+        left: calc(var(--overlayArrowLeft, 0) + 1.25rem);
+        content: ' ';
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .p-overlaypanel:after {
+        border-width: 8px;
+        margin-left: -8px;
+    }
+
+    .p-overlaypanel:before {
+        border-width: 10px;
+        margin-left: -10px;
+    }
+
+    .p-overlaypanel-flipped:after,
+    .p-overlaypanel-flipped:before {
+        bottom: auto;
+        top: 100%;
+    }
+
+    .p-overlaypanel.p-overlaypanel-flipped:after {
+        border-bottom-color: transparent;
+    }
+
+    .p-overlaypanel.p-overlaypanel-flipped:before {
+        border-bottom-color: transparent;
+    }
+}
+</style><style type="text/css" data-primevue-style-id="badge" >
+@layer primevue {
+    .p-badge {
+        display: inline-block;
+        border-radius: 10px;
+        text-align: center;
+        padding: 0 .5rem;
+    }
+
+    .p-overlay-badge {
+        position: relative;
+    }
+
+    .p-overlay-badge .p-badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%,-50%);
+        transform-origin: 100% 0;
+        margin: 0;
+    }
+
+    .p-badge-dot {
+        width: .5rem;
+        min-width: .5rem;
+        height: .5rem;
+        border-radius: 50%;
+        padding: 0;
+    }
+
+    .p-badge-no-gutter {
+        padding: 0;
+        border-radius: 50%;
+    }
+}
+</style><style type="text/css" data-primevue-style-id="badge" >
+@layer primevue {
+    .p-badge {
+        display: inline-block;
+        border-radius: 10px;
+        text-align: center;
+        padding: 0 .5rem;
+    }
+
+    .p-overlay-badge {
+        position: relative;
+    }
+
+    .p-overlay-badge .p-badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(50%,-50%);
+        transform-origin: 100% 0;
+        margin: 0;
+    }
+
+    .p-badge-dot {
+        width: .5rem;
+        min-width: .5rem;
+        height: .5rem;
+        border-radius: 50%;
+        padding: 0;
+    }
+
+    .p-badge-no-gutter {
+        padding: 0;
+        border-radius: 50%;
+    }
+}
+</style><style type="text/css" data-primevue-style-id="tooltip" >
+@layer primevue {
+    .p-tooltip {
+        position:absolute;
+        display:none;
+        padding: .25em .5rem;
+        max-width: 12.5rem;
+    }
+
+    .p-tooltip.p-tooltip-right,
+    .p-tooltip.p-tooltip-left {
+        padding: 0 .25rem;
+    }
+
+    .p-tooltip.p-tooltip-top,
+    .p-tooltip.p-tooltip-bottom {
+        padding:.25em 0;
+    }
+
+    .p-tooltip .p-tooltip-text {
+        white-space: pre-line;
+        word-break: break-word;
+    }
+
+    .p-tooltip-arrow {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+    }
+
+    .p-tooltip-right .p-tooltip-arrow {
+        margin-top: -.25rem;
+        border-width: .25em .25em .25em 0;
+    }
+
+    .p-tooltip-left .p-tooltip-arrow {
+        margin-top: -.25rem;
+        border-width: .25em 0 .25em .25rem;
+    }
+
+    .p-tooltip.p-tooltip-top {
+        padding: .25em 0;
+    }
+
+    .p-tooltip-top .p-tooltip-arrow {
+        margin-left: -.25rem;
+        border-width: .25em .25em 0;
+    }
+
+    .p-tooltip-bottom .p-tooltip-arrow {
+        margin-left: -.25rem;
+        border-width: 0 .25em .25rem;
+    }
+}
+</style><style type="text/css" data-primevue-style-id="ripple" >
+@keyframes ripple {
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+
+@layer primevue {
+    .p-ripple {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .p-ink {
+        display: block;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 100%;
+        transform: scale(0);
+        pointer-events: none;
+    }
+
+    .p-ink-active {
+        animation: ripple 0.4s linear;
+    }
+
+    .p-ripple-disabled .p-ink {
+        display: none !important;
+    }
+}
+</style></head>
+<body ><div id="__nuxt"><div id="__layout" data-v-0fc2c8db><!--[--><div class="home pt-8 pb-8 w-full p-5 grid grid-nogutter" data-v-9782cf17><!----><h1 class="text-center text-gray-900 font-bold mt-0 mb-5 md:mb-6 xl:mb-7 text-6xl md:text-7xl col-12" data-v-9782cf17> Blog Post Titles </h1><div class="text-center text-gray-900 text-xl md:text-2xl col-10 col-offset-1 mb-6 md:mb-8 xl:mb-10" data-v-9782cf17> This tool creates powerful and catchy titles for articles and blogs. Enter the word in the field below and click the Generate button. </div><div class="home__form w-full grid grid-nogutter col-12 justify-content-center mb-8" data-v-9782cf17><div class="home__form-wrapper w-full flex flex-column gap-3" data-v-9782cf17><div class="flex flex-column gap-6 lg:flex-row lg:justify-content-between mb-4" data-v-9782cf17><div class="p-float-label lg:w-6" data-v-9782cf17><div class="p-dropdown p-component p-inputwrapper align-items-center w-full h-4rem" data-pc-name="dropdown" data-pc-section="root" data-v-9782cf17><span id="sizes" class="p-dropdown-label p-inputtext p-dropdown-label-empty" style="" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="undefined_list" aria-disabled="false" data-pc-section="input"><!--[--> <!--]--></span><!----><div class="p-dropdown-trigger" data-pc-section="trigger"><!--[--><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="p-icon p-dropdown-trigger-icon" aria-hidden="true" data-pc-section="dropdownicon"><path d="M7.01744 10.398C6.91269 10.3985 6.8089 10.378 6.71215 10.3379C6.61541 10.2977 6.52766 10.2386 6.45405 10.1641L1.13907 4.84913C1.03306 4.69404 0.985221 4.5065 1.00399 4.31958C1.02276 4.13266 1.10693 3.95838 1.24166 3.82747C1.37639 3.69655 1.55301 3.61742 1.74039 3.60402C1.92777 3.59062 2.11386 3.64382 2.26584 3.75424L7.01744 8.47394L11.769 3.75424C11.9189 3.65709 12.097 3.61306 12.2748 3.62921C12.4527 3.64535 12.6199 3.72073 12.7498 3.84328C12.8797 3.96582 12.9647 4.12842 12.9912 4.30502C13.0177 4.48162 12.9841 4.662 12.8958 4.81724L7.58083 10.1322C7.50996 10.2125 7.42344 10.2775 7.32656 10.3232C7.22968 10.3689 7.12449 10.3944 7.01744 10.398Z" fill="currentColor"></path></svg><!--]--></div><!----></div><label for="sizes" data-v-9782cf17>Size or Significance</label></div><div class="p-float-label lg:w-6" data-v-9782cf17><div class="p-dropdown p-component p-inputwrapper align-items-center w-full h-4rem" data-pc-name="dropdown" data-pc-section="root" data-v-9782cf17><span id="terrain" class="p-dropdown-label p-inputtext p-dropdown-label-empty" style="" tabindex="0" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-controls="undefined_list" aria-disabled="false" data-pc-section="input"><!--[--> <!--]--></span><!----><div class="p-dropdown-trigger" data-pc-section="trigger"><!--[--><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="p-icon p-dropdown-trigger-icon" aria-hidden="true" data-pc-section="dropdownicon"><path d="M7.01744 10.398C6.91269 10.3985 6.8089 10.378 6.71215 10.3379C6.61541 10.2977 6.52766 10.2386 6.45405 10.1641L1.13907 4.84913C1.03306 4.69404 0.985221 4.5065 1.00399 4.31958C1.02276 4.13266 1.10693 3.95838 1.24166 3.82747C1.37639 3.69655 1.55301 3.61742 1.74039 3.60402C1.92777 3.59062 2.11386 3.64382 2.26584 3.75424L7.01744 8.47394L11.769 3.75424C11.9189 3.65709 12.097 3.61306 12.2748 3.62921C12.4527 3.64535 12.6199 3.72073 12.7498 3.84328C12.8797 3.96582 12.9647 4.12842 12.9912 4.30502C13.0177 4.48162 12.9841 4.662 12.8958 4.81724L7.58083 10.1322C7.50996 10.2125 7.42344 10.2775 7.32656 10.3232C7.22968 10.3689 7.12449 10.3944 7.01744 10.398Z" fill="currentColor"></path></svg><!--]--></div><!----></div><label for="terrain" data-v-9782cf17>Terrain Type</label></div></div><div class="flex gap-3 flex-column w-full" data-v-9782cf17><div class="w-full" data-v-9782cf17><div class="p-float-label" data-v-9782cf17><input class="p-inputtext p-component flex align-items-center h-4rem w-full mb-1" value data-pc-name="inputtext" data-pc-section="root" input-id="keywords" data-v-9782cf17><label for="keywords" data-v-9782cf17>Inspiration Keywords</label></div><small class="p-error" data-v-9782cf17> </small></div><div class="w-full" data-v-9782cf17><div class="p-float-label" data-v-9782cf17><textarea class="p-inputtextarea p-inputtext p-component p-inputtextarea-resizable flex align-items-center w-full mb-1" data-pc-name="textarea" data-pc-section="root" rows="5" input-id="description" data-v-9782cf17></textarea><label for="description" data-v-9782cf17>Short Description</label></div><small class="p-error" data-v-9782cf17> </small></div></div><button class="p-button p-component p-disabled p-button-lg w-full flex align-items-center justify-content-center h-4rem" type="button" disabled data-pc-name="button" data-pc-section="root" data-v-9782cf17><!--[--><!----><span class="px-3 font-bold" data-v-9782cf17>Generate</span><!--]--></button></div></div><!----><div class="home__how text-gray-900 grid grid-nogutter m-auto text-lg line-height-3 pt-8 border-top-1 border-primary" data-v-9782cf17><div class="text-primary font-bold text-4xl mb-5 col-12" data-v-9782cf17> How it works </div><div class="col-12 lg:col-6" data-v-9782cf17><p class="lg:p-2 mb-5" data-v-9782cf17> When writing a blog, the title or headline is the most important aspect. This is what’s going to entice readers to read or share your post. If the title isn’t good, your article isn’t going anywhere. If you need help crafting a great blog title, our title generator service is what you need! </p><p class="lg:p-2 mb-5" data-v-9782cf17> This tool will not only help you title an existing blog post but can also help you generate ideas for future posts. This could be an invaluable tool for people who make their living writing on the internet. </p><p class="lg:p-2 mb-5" data-v-9782cf17> If you are worried about cost, don’t be: our tool is completely free to use as much as you like. The title ideas it produces don’t cost anything and are free from any royalty restrictions. Plus, you don’t need to give us your email or any other information. </p><p class="font-bold lg:p-2 mb-5" data-v-9782cf17> Blog title generator: How does it work? </p><p class="lg:p-2 mb-5" data-v-9782cf17> This page has a text box. In this box, you’ll want to put the main keyword for your blog post. Similarly, if you haven’t written a post yet, using a keyword related to the topic you want to write about would be a great idea. </p></div><div class="col-12 lg:col-6" data-v-9782cf17><p class="lg:p-2 mb-5" data-v-9782cf17> Keep in mind, however, that you must use only Latin characters and cannot use spaces. Once you’ve entered a good keyword, hit the GENERATE button. Our server will then generate thousands of blog title ideas for you related to that keyword. You’ll see a relatively small list at first, but if you scroll down and hit the GENERATE MORE button, you’ll get additional ideas. </p><p class="lg:p-2 mb-5" data-v-9782cf17> Next to each title idea will be two buttons: a COPY button and a STAR button. The COPY button will copy that title idea so you can paste it somewhere. Meanwhile, the STAR button will save that title to a list. You can access the list by hitting the SAVED IDEAS button. </p><p class="lg:p-2 mb-5" data-v-9782cf17> You don’t need to worry about losing your saved ideas if you hit the GENERATE MORE button again or even do another keyword search. Feel free to jump around! </p><p class="lg:p-2 mb-5" data-v-9782cf17> When you have compiled a good list, hit the SAVED IDEAS button and then the DOWNLOAD button. You’ll receive a text file with all your saved ideas. Hit the DELETE ALL button to clear your list and start the process again. </p></div></div></div><!--]--></div></div><script type="application/json" id="__NUXT_DATA__" data-ssr="true" data-src="/city-generator-nuxt/_payload.json">[{"state":1,"_errors":3,"serverRendered":6,"path":7,"pinia":8,"prerenderedAt":10},["Reactive",2],{},["Reactive",4],{"$pqtWcjQkdb":5},null,true,"/",["Reactive",9],{},1702987795698]</script>
+<script>window.__NUXT__={};window.__NUXT__.config={public:{primevue:{usePrimeVue:true,resolvePath:"",cssLayerOrder:"tailwind-base, primevue, tailwind-utilities",importPT:"",options:{ripple:true},components:[{name:"PrimeDropdown",as:"Dropdown",from:"primevue/dropdown",export:"default",filePath:"primevue/dropdown",global:true},{name:"PrimeInputText",as:"InputText",from:"primevue/inputtext",export:"default",filePath:"primevue/inputtext",global:true},{name:"PrimeTextarea",as:"Textarea",from:"primevue/textarea",export:"default",filePath:"primevue/textarea",global:true},{name:"PrimeButton",as:"Button",from:"primevue/button",export:"default",filePath:"primevue/button",global:true},{name:"PrimeScrollPanel",as:"ScrollPanel",from:"primevue/scrollpanel",export:"default",filePath:"primevue/scrollpanel",global:true},{name:"PrimeConfirmDialog",use:{as:"ConfirmationService"},as:"ConfirmDialog",from:"primevue/confirmdialog",export:"default",filePath:"primevue/confirmdialog",global:true},{name:"PrimeDialog",as:"Dialog",from:"primevue/dialog",export:"default",filePath:"primevue/dialog",global:true},{name:"PrimeOverlayPanel",as:"OverlayPanel",from:"primevue/overlaypanel",export:"default",filePath:"primevue/overlaypanel",global:true},{name:"PrimeBadge",as:"Badge",from:"primevue/badge",export:"default",filePath:"primevue/badge",global:true}],directives:[{name:"badge",as:"BadgeDirective",from:"primevue/badgedirective"},{name:"tooltip",as:"Tooltip",from:"primevue/tooltip"},{name:"ripple",as:"Ripple",from:"primevue/ripple"},{name:"styleclass",as:"StyleClass",from:"primevue/styleclass"},{name:"focustrap",as:"FocusTrap",from:"primevue/focustrap"},{name:"animateonscroll",as:"AnimateOnScroll",from:"primevue/animateonscroll"}],composables:[{name:"usePrimeVue",as:"usePrimeVue",from:"primevue/config"},{name:"useStyle",as:"useStyle",from:"primevue/usestyle"},{name:"useConfirm",as:"useConfirm",from:"primevue/useconfirm"},{name:"useToast",as:"useToast",from:"primevue/usetoast"},{name:"useDialog",as:"useDialog",from:"primevue/usedialog"}],config:[{name:"PrimeVue",as:"PrimeVue",from:"primevue/config"}],services:[{name:"ConfirmationService",as:"ConfirmationService",from:"primevue/confirmationservice"}],styles:[{name:"BaseStyle",as:"BaseStyle",from:"primevue/base/style"},{name:"BaseComponentStyle",as:"BaseComponentStyle",from:"primevue/basecomponent/style"},{name:"DropdownStyle",as:"DropdownStyle",from:"primevue/dropdown/style"},{name:"InputTextStyle",as:"InputTextStyle",from:"primevue/inputtext/style"},{name:"TextareaStyle",as:"TextareaStyle",from:"primevue/textarea/style"},{name:"ButtonStyle",as:"ButtonStyle",from:"primevue/button/style"},{name:"ScrollPanelStyle",as:"ScrollPanelStyle",from:"primevue/scrollpanel/style"},{name:"ConfirmDialogStyle",as:"ConfirmDialogStyle",from:"primevue/confirmdialog/style"},{name:"DialogStyle",as:"DialogStyle",from:"primevue/dialog/style"},{name:"OverlayPanelStyle",as:"OverlayPanelStyle",from:"primevue/overlaypanel/style"},{name:"BadgeStyle",as:"BadgeStyle",from:"primevue/badge/style"},{name:"BadgeDirectiveStyle",as:"BadgeDirectiveStyle",from:"primevue/badgedirective/style"},{name:"TooltipStyle",as:"TooltipStyle",from:"primevue/tooltip/style"},{name:"RippleStyle",as:"RippleStyle",from:"primevue/ripple/style"},{name:"StyleClassStyle",as:"StyleClassStyle",from:"primevue/styleclass/style"},{name:"FocusTrapStyle",as:"FocusTrapStyle",from:"primevue/focustrap/style"},{name:"AnimateOnScrollStyle",as:"AnimateOnScrollStyle",from:"primevue/animateonscroll/style"}],injectStylesAsString:[],injectStylesAsStringToTop:["'\u003Cstyle type=\"text/css\" data-primevue-style-id=\"layer-order\" >@layer tailwind-base, primevue, tailwind-utilities\u003C/style>'"]}},app:{baseURL:"/city-generator-nuxt/",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body>
+</html>
