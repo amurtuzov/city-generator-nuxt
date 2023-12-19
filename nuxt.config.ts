@@ -3,7 +3,6 @@ export default defineNuxtConfig({
     inlineSSRStyles: false,
   },
   nitro: {
-    preset: 'github-pages',
     esbuild: {
       options: {
         target: 'esnext',
@@ -29,7 +28,6 @@ export default defineNuxtConfig({
     autoImport: true,
   },
   app: {
-    baseURL: '/city-generator-nuxt/',
     head: {
       meta: [
         { charset: 'utf-8' },

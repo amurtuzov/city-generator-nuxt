@@ -1,1 +1,0 @@
-import{_ as t}from"./_plugin-vue_export-helper.c27b6911.js";import{l as _,L as o,k as c}from"./entry.8a2bed71.js";const d={},s={id:"__layout"};function n(e,a){return c(),_("div",s,[o(e.$slots,"default",{},void 0,!0)])}const l=t(d,[["render",n],["__scopeId","data-v-0fc2c8db"]]);export{l as default};

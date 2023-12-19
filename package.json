@@ -12,8 +12,7 @@
     "typecheck": "nuxt typecheck",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "kill": "lsof -t -i tcp:3000,8080 | xargs kill -9",
-    "deploy-gh": "yarn generate && git add -f .output/public && git commit -m \"deploy gh\" && git subtree push --prefix .output/public origin gh-pages"
+    "kill": "lsof -t -i tcp:3000,8080 | xargs kill -9"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
