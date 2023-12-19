@@ -19,7 +19,7 @@ function toggle(event: Event) {
 
 <template>
   <div class="flex justify-content-start flex-shrink-0">
-    <PrimeButton
+    <LazyPrimeButton
       rounded
       text
       class="bg-yellow-100 focus:shadow-none flex align-items-center gap-2 p-1 pr-3 pl-3"
@@ -30,7 +30,7 @@ function toggle(event: Event) {
         <span>Saved&nbsp;</span>
         <span class="hidden lg:inline">ideas</span>
       </div>
-      <PrimeBadge
+      <LazyPrimeBadge
         :value="favorites.length"
         class="bg-white text-yellow-500 text-base w-2rem h-2rem flex justify-content-center align-items-center m-0"
       />
@@ -38,18 +38,18 @@ function toggle(event: Event) {
         class="pi pi-angle-down text-gray-900 text-xl transition-transform transition-duration-100 transition-ease-in-out"
         :class="{ 'rotate-180': isSavedIdeasOpen }"
       />
-    </PrimeButton>
-    <PrimeOverlayPanel
+    </LazyPrimeButton>
+    <LazyPrimeOverlayPanel
       ref="overlayPanelRef"
       :style="{ width: '400px', height: '400px' }"
       :pt="{
         content: 'p-2 h-full flex flex-column gap-2 max-h-full',
       }"
     >
-      <FavoritesItems />
-    </PrimeOverlayPanel>
+      <LazyFavoritesItems />
+    </LazyPrimeOverlayPanel>
   </div>
-  <PrimeDialog
+  <LazyPrimeDialog
     v-model:visible="dialogVisibility"
     :style="{ width: '100vw', margin: 0, height: '80vh' }"
     class="bg-white"
@@ -64,6 +64,6 @@ function toggle(event: Event) {
         'flex flex-column justify-content-between flex-grow-1 pr-3 pl-3 pb-4 gap-3',
     }"
   >
-    <FavoritesItems />
-  </PrimeDialog>
+    <LazyFavoritesItems />
+  </LazyPrimeDialog>
 </template>

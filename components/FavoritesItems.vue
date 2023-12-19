@@ -33,7 +33,7 @@ function confirmRemoveAllFavorites() {
 
 <template>
   <div class="flex-grow-1" style="height: 85%">
-    <PrimeScrollPanel
+    <LazyPrimeScrollPanel
       style="width: 100%; height: 100%"
       :pt="{
         wrapper: {
@@ -52,7 +52,7 @@ function confirmRemoveAllFavorites() {
     >
       <div class="w-full h-full flex flex-column gap-2">
         <template v-if="favorites.length">
-          <ListItem
+          <LazyListItem
             v-for="item in favorites"
             :key="item"
             :item="item"
@@ -63,16 +63,16 @@ function confirmRemoveAllFavorites() {
           No saved ideas
         </div>
       </div>
-    </PrimeScrollPanel>
+    </LazyPrimeScrollPanel>
   </div>
   <div class="flex justify-content-between flex-shrink-0">
-    <PrimeButton
+    <LazyPrimeButton
       class="p-button-lg w-full h-3rem text-base w-5"
       label="Download"
       :disabled="!favorites.length"
       @click="downloadFavorites"
     />
-    <PrimeButton
+    <LazyPrimeButton
       class="p-button-lg w-full h-3rem bg-white text-gray-900 text-base w-5"
       label="Delete all"
       :disabled="!favorites.length"

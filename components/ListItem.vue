@@ -55,7 +55,7 @@ function removeFromFavorites(text: string) {
       class="flex flex-row gap-3 flex-grow-1 justify-content-end"
       style="max-width: 200px"
     >
-      <PrimeButton
+      <LazyPrimeButton
         aria-label="Copy to clipboard"
         icon="pi pi-copy"
         title="Copy to clipboard"
@@ -66,7 +66,7 @@ function removeFromFavorites(text: string) {
         :label="copyButtonLabel"
         @click="copyToClipBoard(item)"
       />
-      <PrimeButton
+      <LazyPrimeButton
         v-if="favorites"
         aria-label="Remove from favorites"
         icon="pi pi-times"
@@ -77,7 +77,7 @@ function removeFromFavorites(text: string) {
         icon-class="text-xl text-gray-900"
         @click="removeFromFavorites(item)"
       />
-      <PrimeButton
+      <LazyPrimeButton
         v-else
         aria-label="Add to favorites"
         :icon="`pi ${

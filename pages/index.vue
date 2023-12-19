@@ -97,17 +97,17 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="home pt-8 pb-8 w-full p-5 grid grid-nogutter">
-    <PrimeConfirmDialog group="headless" style="width: 300px" @click.stop>
+    <LazyPrimeConfirmDialog group="headless" style="width: 300px" @click.stop>
       <template #container="{ message, acceptCallback, rejectCallback }">
         <div class="bg-white flex flex-column gap-5 p-3 pt-4 border-round">
           <span class="text-center text-gray-900">{{ message?.message }}</span>
           <div class="flex align-items-center justify-content-end gap-2">
-            <PrimeButton outlined label="No" @click.stop="rejectCallback" />
-            <PrimeButton label="Yes" @click.stop="acceptCallback" />
+            <LazyPrimeButton outlined label="No" @click.stop="rejectCallback" />
+            <LazyPrimeButton label="Yes" @click.stop="acceptCallback" />
           </div>
         </div>
       </template>
-    </PrimeConfirmDialog>
+    </LazyPrimeConfirmDialog>
     <h1
       class="text-center text-gray-900 font-bold mt-0 mb-5 md:mb-6 xl:mb-7 text-6xl md:text-7xl col-12"
     >
@@ -127,7 +127,7 @@ onBeforeUnmount(() => {
           class="flex flex-column gap-6 lg:flex-row lg:justify-content-between mb-4"
         >
           <div class="p-float-label lg:w-6">
-            <PrimeDropdown
+            <LazyPrimeDropdown
               v-model="params.size"
               :options="sizes"
               input-id="sizes"
@@ -136,7 +136,7 @@ onBeforeUnmount(() => {
             <label for="sizes">Size or Significance</label>
           </div>
           <div class="p-float-label lg:w-6">
-            <PrimeDropdown
+            <LazyPrimeDropdown
               v-model="params.terrain"
               :options="terrains"
               input-id="terrain"
@@ -148,7 +148,7 @@ onBeforeUnmount(() => {
         <div class="flex gap-3 flex-column w-full">
           <div class="w-full">
             <div class="p-float-label">
-              <PrimeInputText
+              <LazyPrimeInputText
                 v-model="params.keywords"
                 class="flex align-items-center h-4rem w-full mb-1"
                 :class="{ 'p-invalid': errorMessages.keywords }"
@@ -163,7 +163,7 @@ onBeforeUnmount(() => {
           </div>
           <div class="w-full">
             <div class="p-float-label">
-              <PrimeTextarea
+              <LazyPrimeTextarea
                 v-model="params.description"
                 auto-resize
                 class="flex align-items-center w-full mb-1"
@@ -179,14 +179,14 @@ onBeforeUnmount(() => {
             </small>
           </div>
         </div>
-        <PrimeButton
+        <LazyPrimeButton
           class="p-button-lg w-full flex align-items-center justify-content-center h-4rem"
           :disabled="isLoading || !isValid"
           @click="generate"
         >
           <i v-if="isLoading" class="pi pi-spin pi-spinner" />
           <span v-if="!isLoading" class="px-3 font-bold">Generate</span>
-        </PrimeButton>
+        </LazyPrimeButton>
       </div>
     </div>
     <div
@@ -199,12 +199,12 @@ onBeforeUnmount(() => {
           <span class="text-primary">10000+&nbsp;</span>
           <span>items in our database</span>
         </div>
-        <FavoritesToggler />
+        <LazyFavoritesToggler />
       </div>
       <div class="flex flex-column gap-3">
-        <ListItem v-for="item in generatedItems" :key="item" :item="item" />
+        <LazyListItem v-for="item in generatedItems" :key="item" :item="item" />
       </div>
-      <PrimeButton
+      <LazyPrimeButton
         class="p-button-lg flex align-items-center justify-content-center h-3rem m-auto mt-2"
         :disabled="isLoading"
         :pt="{
@@ -216,7 +216,7 @@ onBeforeUnmount(() => {
       >
         <i v-if="isLoading" class="pi pi-spin pi-spinner" />
         <span v-if="!isLoading" class="px-3 font-bold">Generate more</span>
-      </PrimeButton>
+      </LazyPrimeButton>
     </div>
     <div
       class="home__how text-gray-900 grid grid-nogutter m-auto text-lg line-height-3 pt-8 border-top-1 border-primary"
