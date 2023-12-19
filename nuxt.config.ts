@@ -10,6 +10,21 @@ export default defineNuxtConfig({
       },
     },
   },
+  hooks: {
+    // prevent some prefetch behaviour
+    'build:manifest': (manifest) => {
+      for (const key in manifest) {
+        manifest[key].dynamicImports = []
+
+        const file = manifest[key]
+        if (file.assets) {
+          file.assets = file.assets.filter(
+            (assetName: string) => !/.+\.(gif|jpe?g|png|svg)$/.test(assetName),
+          )
+        }
+      }
+    },
+  },
   imports: {
     autoImport: true,
   },
